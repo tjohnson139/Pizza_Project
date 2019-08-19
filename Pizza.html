@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href = "./Pizza_CSS/Pizza.css" />
+
+    <title>Pizza Drill Demo</title>
+  </head>
+  <body>
+    <div id="menuBG">
+        <h1 style="margin: 0 30px 0 20px;">Pizza Drill Tutorial</h1>
+        <input id="btnOrder" type="button" onclick="getReceipt()"
+            value="Place Order">
+        <form id="frmMenu">
+            <div class="menu left">
+                <h3>Size:</h3>
+                <input class="size" type="radio" name="size"
+                    value="Personal Pizza"> Personal Pizza<br>
+                <input class="size" type="radio" name="size"
+                    value="Small Pizza"> Small Pizza<br>
+                <input class="size" type="radio" name="size"
+                    value="Medium Pizza"> Medium Pizza<br>
+                <input class="size" type="radio" name="size"
+                    value="Large Pizza" checked> Large Pizza <br>
+                    <!--checked sets the radio ID to be auto-selected-->
+                <input class="size" type="radio" name="size"
+                    value="Extra Large Pizza"> Extra Large Pizza<br>
+            </div>
+            <div class="menu center">
+                <h3>Veggies:</h3>
+                <input class="veggies" type=checkbox name="veg"
+                    value="Mushrooms"> Mushrooms<br>
+                <input class="veggies" type=checkbox name="veg"
+                    value="Onions"> Onions<br>
+                <input class="veggies" type=checkbox name="veg"
+                    value="Tomatoes"> Tomatoes<br>
+                <input class="veggies" type=checkbox name="veg"
+                    value="Olives"> Olives<br>
+                <input class="veggies" type=checkbox name="veg"
+                    value="Green Peppers"> Green Peppers<br>
+            </div>
+            
+            <div class="menu right">
+                <h3>Meats:</h3>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Pepperoni"> Pepperoni<br>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Sausage"> Sausage<br>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Canadian Bacon"> Canadian Bacon<br>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Ground Beef"> Ground Beef<br>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Anchovy"> Anchovy<br>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Chicken"> Chicken<br>
+                <input class="meats" type="checkbox" name="meat"
+                    value="Salami"> Salami<br>
+            </div>
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Pizza_JavaScript/Pizza.js"></script>
+  </body>
+</html>
